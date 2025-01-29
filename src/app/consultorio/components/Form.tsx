@@ -42,7 +42,7 @@ const MeasurementRegistrationForm = () => {
     revision4MusculoEsqueletico: '',
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -50,7 +50,7 @@ const MeasurementRegistrationForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log(formData);
   };
