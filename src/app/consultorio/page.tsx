@@ -11,7 +11,7 @@ const ResponsiveGridLayout = WidthProvider(Responsive);
 
 
 
-export const page = () => {
+const page = () => {
 
  // Definir el diseño inicial de los elementos en la cuadrícula
  const layouts = {
