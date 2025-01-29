@@ -1,16 +1,17 @@
 'use client'
-import React, { useMemo } from 'react';
+import React from 'react';
 import MeasurementRegistrationForm from './components/Form';
 import { GrasaCorporal } from '../components/GrasaCorporal';
 import { GrasaVisceral } from '../components/GrasaVisceral';
 import { Imc } from '../components/Imc';
 import { PorMusculoEsqueletico } from '../components/PorMusculoEsqueletico';
-import { Responsive, WidthProvider } from "react-grid-layout";
 
-const ResponsiveGridLayout = WidthProvider(Responsive);
+
+//const ResponsiveGridLayout = WidthProvider(Responsive);
 
 const Page = () => {
   // Definir el diseño inicial con `useMemo` para evitar recreación en cada render
+  /*
   const layouts = useMemo(() => ({
     lg: [
       { i: "form", x: 0, y: 0, w: 1, h: 2 },
@@ -34,7 +35,7 @@ const Page = () => {
       { i: "musculo-esqueletico", x: 0, y: 8, w: 3, h: 2 },
     ]
   }), []);
-/*
+
   return (
     <div >
       <ResponsiveGridLayout
